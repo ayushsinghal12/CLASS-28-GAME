@@ -12,7 +12,7 @@ function setup() {
   createCanvas(600, 600);
   wormGroup = new Group();
   score = 0;
-  player.scale = 0.25;
+  player.scale = 0.125;
   edges = createEdgeSprites()
 }
 function draw() {
@@ -59,7 +59,7 @@ function worms() {
       5
     );
     worm.addImage(wormImg);
-    worm.scale = 0.2;
+    worm.scale = 0.1;
     wormGroup.add(worm);
     worm.shapeColor = "green";
     worm.velocityX = random(random(-10, -5), random(5, 10));
